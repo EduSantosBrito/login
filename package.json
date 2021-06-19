@@ -3,7 +3,7 @@
   "scripts": {
     "start": "webpack serve --port 9003",
     "start:standalone": "webpack serve --env standalone",
-    "build": "webpack --mode=production",
+    "build": "cross-env rm -rf dist && webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
     "lint": "eslint src --ext js",
     "format": "prettier --write .",
